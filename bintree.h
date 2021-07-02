@@ -31,4 +31,6 @@ node *insertNode(node *, int, const char *);
 node *insert(binTree *, int, const char *);
 int treeDepth(node *);
 
+// TODO: Rotationsprototypen
+
 #endif /* bintree_h */

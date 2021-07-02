@@ -14,6 +14,7 @@ binTree *t_init(){
     return tmp;
 }
 
+// TODO: double pointer einführen oder über return Werte lösen
 node *insertNode(node *start, int key, const char *data){
     node *newNode;
     if (start == NULL) {
@@ -36,11 +37,10 @@ node *insertNode(node *start, int key, const char *data){
             start->right = newNode;
     }
     
-    // Balancefaktor für den "start" Knoten mit Hilfe von treeDepth berechnen
-    
-    // Überprüfung der Lastigkeit
-    
-    // Ausführung der einzelnen Rotationen
+    // TODO: Schritte 1-3
+    // 1. Balancefaktor für den "start" Knoten mit Hilfe von treeDepth berechnen
+    // 2. Überprüfung der Lastigkeit
+    // 3. Ausführung der einzelnen Rotationen
     
     return newNode;
 }
@@ -70,3 +70,9 @@ int treeDepth(node *start){
     }
 }
 
+// TODO: Implementierung Rotationen
+
+// rotateLL
+// rotateRL
+// rotateRR
+// rotateLR
