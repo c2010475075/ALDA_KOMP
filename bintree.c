@@ -35,6 +35,13 @@ node *insertNode(node *start, int key, const char *data){
         if (start->right == NULL)
             start->right = newNode;
     }
+    
+    // Balancefaktor für den "start" Knoten mit Hilfe von treeDepth berechnen
+    
+    // Überprüfung der Lastigkeit
+    
+    // Ausführung der einzelnen Rotationen
+    
     return newNode;
 }
 
