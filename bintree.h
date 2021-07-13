@@ -17,6 +17,7 @@ typedef struct node_ {
     char *data;
     struct node_ *left;
     struct node_ *right;
+    int bk;
 } node;
 
 typedef struct binTree_ {
@@ -24,13 +25,18 @@ typedef struct binTree_ {
     node *root;
 } binTree;
 
+
+
 // Funktionsprototypen
 
 binTree *t_init(void);
 node *insertNode(node *, int, const char *);
 node *insert(binTree *, int, const char *);
 int treeDepth(node *);
-
+void preOrder(node *root);
+node*rightRotate(node*y);
+node *leftRotate(node *x);int max(int a, int b);
+int treeDepth(node *start);int height(node *start);int getBalance(node *start);
 // TODO: Rotationsprototypen
 
 #endif /* bintree_h */
